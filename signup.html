@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .gender-group {
+            margin-top: 5px;
+        }
+
+        .gender-group label {
+            display: inline-block;
+            font-weight: normal;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            border: none;
+            background-color: #00ccff;
+            color: white;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    
+</head>
+<body>
+    <form action="" method="post">
+        <h1>SIGN-UP FORM</h1>
+        <label for="first name">FIRST NAME:</label>
+        <input type="text" id="username" name="first name" required placeholder="Enter your first name">
+        <br>
+        <label for="last name">LAST NAME:</label>
+        <input type="text" id="last_name" name="last name" required placeholder="Enter your last name">
+        <br>
+        <label for ="gender">GENDER:</label>
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="male" required>
+        <label for="female">female</label>
+        <input type="radio" name="gender" id="female" required>
+        <label for="others">others</label>
+        <input type="radio" name="gender" id="others" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+        <br>
+        <label for="dob">DOB</label>
+        <input type="date" name="dob" name="dob" id="">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required placeholder="Enter your password">
+        <br>
+        <label for="confirm password"> CONFIRM PASSWORD</label>
+        <input type="text" id="confirm_password" name="confirm password" required placeholder="Re-enter your password"> 
+        <br>
+        <input type="submit" value="Sign Up">
+    </form>
+        
+</body>
+</html>
+
