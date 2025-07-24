@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        .items{
+            height: 300px;
+            width: 300px;
+            color: red;
+            background-color: chartreuse;
+            border: 5px solid black;
+            text-align: center;
+            align-content: center;
+            border-radius: 15px;
+        }
+        .gridcontainer{
+            display: grid;
+            grid-template-columns: repeat(4, 3fr);
+            grid-gap: 10px;
+            align-items: center;
+            justify-items: center;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: blue;
+        }
+        img{
+            width: 250px;
+            height: 100px;
+            border-radius: 50%;
+           
+        }
+        img:hover{
+             box-shadow: 30px 30px 30px rgb(0, 0, 0);
+        }
+        .product-name{
+           font-weight: bold;
+            font-size: 25px;
+            color: floralwhite;
+        }
+        button{
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        } 
+        button:hover{
+            background-color: blue;
+        }    
+        .items:hover{
+            background-color: tomato;
+        }  
+        .list-style{
+            list-style: none;
+            /* display: flex; */
+            padding: 20px;
+            color: white;
+            display: inline;
+            
+        }
+        a{
+            text-decoration: none;
+
+        }
+        ul li{
+            padding: 50px;
+            text-align: end;
+            display: inline;
+        }
+        header{
+            background-color: aqua;
+            padding: 20px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Electronic Gadgets</h1>
+         <ul class="list-style"><li><a href="HOME">HOME</a></li>
+    <li><a href="products">PRODUCTS</a></li>
+    <li><a href="privacy policy">PRIVACY POLICY</a></li>
+    <li><a href="support us">SUPPORT US</a></li>
+    </ul>
+    </header>
+    <section>
+        <div class="gridcontainer">
+
+            <div class="items">
+                <div>
+                    <img src="https://www.advancingnortheast.in/wp-content/uploads/2021/12/hall-shopping-center-shop-digital-260nw-1445581070.jpg" alt="laptop image"><br>
+                    <br>
+                    <b class="product-name">laptop</b>
+                    <p>&#8377;50000/-</p>
+                    <button>place order</button>
+                </div>
+            </div>
+            <div class="items">
+                <img src="https://thetechhacker.com/wp-content/uploads/2021/11/Are-electronic-Gadgets-Good-for-us-Or-are-they-Bad.jpg" alt="gadget image"><br>
+                <b class="product-name">gadget</b>
+                <p>&#8377;20000/-</p>
+                <button>place order</button>
+            </div>
+            <div class="items">
+                <img src="https://assets.nikshanonline.com/wp-content/uploads/2023/10/Mobiles.png" alt=""><br>
+                <b class="product-name">mobile</b>
+                <p>&#8377;30000/-</p>
+                <button>place order</button>
+            </div>
+            <div class="items">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqCek_1kbyKuciFkbci84ffRNW9yqXaUTN5Q&s " alt=""><br>
+                <b class="product-name">washing machine</b>
+                <p>&#8377;35000/-</p>
+                <button>place order</button>
+            </div>
+            <div class="items">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2023/12/372325508/ZZ/TZ/XX/180833002/tab-m10-25-65cms-10-1-4gb-64gb-storm-grey.png" alt=""><br>
+                <b class="product-name">Tab</b>
+                <p>&#8377;40000/-</p>
+                <button>place order</button>
+            </div>
+            <div class="items">
+                <img src="https://rukminim2.flixcart.com/image/704/844/xif0q/air-cooler/k/b/n/-original-imahanfphfqwxbuw.jpeg?q=90&crop=false" alt=""><br>
+                <b class="product-name">air cooler</b>
+                <p>&#8377;10000/-</p>
+                <button>place order</button>
+            </div>
+            <div class="items">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc5-Mc8WstBydn-bxgEq0IYV0NjBs4K2fReA&s" alt=""><br>
+                <b class="product-name">television</b>
+                <p>&#8377;60000/-</p>
+                <button>place order</button>
+            </div>
+            <div class="items">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTpxLj3yFygOQRCSSi_lv7mZbVFDJsigEZMA&s" alt=""><br>
+                <b class="product-name">air conditioner</b>
+                <p>&#8377;70000/-</p>
+                <button>place order</button>
+            </div>
+            <div class="items">
+                <img src="https://5.imimg.com/data5/SELLER/Default/2021/3/PA/ZQ/LT/121439134/epson-colore-printer-inkjet-500x500.jpg" alt=""><br>
+                <b class="product-name">printer</b>
+                <p>&#8377;35000/-</p>
+                <button>place order</button>
+            </div>
+            <div class="items">
+                <img src="https://cdn.mos.cms.futurecdn.net/4wpKrH93D37dDPTisdqGy4-1200-80.jpg" alt=""><br>
+                <b class="product-name">camera</b>
+                <p>&#8377;80000/-</p>
+                <button>place order</button>
+            </div>
+            <div class="items">
+                <img src="https://m.media-amazon.com/images/I/61pIzNaNRWL.jpg" alt=""><br>
+                <b class="product-name">smart watch</b>
+                <p>&#8377;6000/-</p>
+                <button>place order</button>
+            </div>
+            <div class="items">
+                <img src="https://www.leafstudios.in/cdn/shop/files/1_6b54ff34-acdd-40e6-a08a-f2bfa33a1c7a_grande.png?v=1718706988" alt=""><br>
+                <b class="product-name">earbuds</b>
+                <p>&#8377;3000/-</p>
+                <button>place order</button>
+            </div>
+        </div>
+    </section>
+    
+    
+</body>
+</html>
