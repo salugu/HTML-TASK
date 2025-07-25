@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+    <style>
+        body{}
+    
+        .static{
+            color: aqua;
+            background-color: black;
+            position:static;
+            text-align: center;
+        }
+        .absolute{
+            color:brown;
+            background-color: blueviolet;
+            position:absolute;
+            text-align: center;
+            top:100px;
+            left: 100px;
+        }
+        .relative{
+            color: aqua;
+            background-color: hotpink;
+            position :relative;
+            top:100px;
+            text-align: center;
+        }
+        .fixed{
+            color:bisque;
+            background-color: saddlebrown;
+            position:fixed;
+            text-align: center;
+            top:200px;
+        }
+        .sticky{
+            color:orange;
+            background-color: yellow;
+            position:sticky;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="static">this is a static division</div>
+    <div class="absolute">this is an absolute division</div>
+    <div class="relative">this is a relative position</div>
+    <div class="fixed">this is a fixed postion</div>
+    <div class="sticky">this is a sticky position</div>
+
+</body>
+</html>
